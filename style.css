@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+    border: 2px solid white;
+    width: 100%; /* Make image responsive */
+}
+
+/* Flyer Container */
+.flyer-container {
+    background-color: #fff;
+    width: 80%; /* Use a percentage for responsiveness */
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px; /* Add margin for smaller screens */
+}
+
+/* Header */
+.flyer-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.flyer-header h1 {
+    font-size: 2em;
+}
+
+.flyer-header p {
+    font-size: 1.2em;
+}
+
+/* Flyer Content */
+.flyer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.owner-image img {
+    width: 45%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Company Info */
+.company-info {
+    text-align: left;
+    width: 100%;
+}
+
+.company-info h2 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.company-info p,
+.company-info ul {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.company-info ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+/* Footer */
+.flyer-footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .flyer-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .flyer-header h1 {
+        font-size: 1.8em;
+    }
+
+    .flyer-header p {
+        font-size: 1.1em;
+    }
+
+    .owner-image img {
+        width: 60%; /* Make the image a bit larger on smaller screens */
+    }
+
+    .company-info h2 {
+        font-size: 1.3em;
+    }
+
+    .company-info p,
+    .company-info ul {
+        font-size: 0.9em; /* Slightly smaller font for better fit */
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    .flyer-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .flyer-header h1 {
+        font-size: 1.5em;
+    }
+
+    .flyer-header p {
+        font-size: 1em;
+    }
+
+    .owner-image img {
+        width: 70%; /* Make the image even larger on mobile */
+    }
+
+    .company-info h2 {
+        font-size: 1.2em;
+    }
+
+    .company-info p,
+    .company-info ul {
+        font-size: 0.9em;
+    }
+
+    .company-info ul {
+        margin-left: 10px;
+    }
+}
